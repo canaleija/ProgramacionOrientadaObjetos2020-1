@@ -5,6 +5,8 @@
  */
 package programacionorientadaobjetos2020.pkg1;
 
+import poo.Persona;
+
 /**
  *
  * @author CRUZLEIJA
@@ -15,7 +17,8 @@ public class ProgramacionOrientadaObjetos20201 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Persona beto = new Persona();
+        System.out.println();
     }
     
 }
