@@ -17,8 +17,12 @@ public class ProgramacionOrientadaObjetos20201 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Persona beto = new Persona();
+        int x = 6;
+        Persona beto = new Persona("Juan Alberto",
+                18, 1.9, 2.1, "Prefiero no decirlo");
+        beto.nombre = "Roberto";
         System.out.println();
+       
     }
     
 }
