@@ -21,7 +21,7 @@ public class Alumno extends Persona {
         this.boleta =0;
         this.regular =false;
         this.promedioGral =0;
-        this.carrera ="";
+        this.carrera = "";
     }
 
     public Alumno(String nombre,
@@ -33,6 +33,12 @@ public class Alumno extends Persona {
         this.regular = regular;
         this.promedioGral = promedioGral;
         this.carrera = carrera;
+    }
+    
+    public Alumno (Alumno alumno){
+        this(alumno.getNombre(),alumno.getEdad(),alumno.getEstatura(),alumno.getPeso(),alumno.getSexo(),
+                alumno.getBoleta(),alumno.isRegular(),alumno.getPromedioGral(),alumno.getCarrera());
+    
     }
 
     /**
@@ -90,7 +96,13 @@ public class Alumno extends Persona {
     public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
+
+    @Override
+    public void saludar() {
+       super.saludar();
+       System.out.println("Y soy Alumno!");
+    }
     
-    
+   
     
 }

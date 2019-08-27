@@ -40,7 +40,7 @@ public class Persona {
     
     
     public  void saludar(){
-        System.out.println("Hola mundo");
+        System.out.println("Hola, mi nombre es: "+this.nombre);
     } 
     
     public String getNombre (){
