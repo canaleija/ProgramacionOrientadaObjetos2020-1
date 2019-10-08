@@ -21,6 +21,7 @@ public class CalculadoraMain {
      */
     public static void main(String[] args) {
        JFrameCalculadora calcu = new JFrameCalculadora();
+       calcu.setSize(500, 500);
        calcu.setVisible(true);
                
     }

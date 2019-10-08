@@ -6,6 +6,7 @@
 package calculadora;
 
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -80,15 +81,18 @@ public class JFrameCalculadora extends JFrame {
         setLayout(new BorderLayout());
         add(panelCentral,BorderLayout.CENTER);
         
-        JTextField display = new JTextField();
+        Display display = new Display();
         Font auxF = display.getFont();
         Font nueva = new Font(auxF.getName(),auxF.getStyle(),50);
         display.setFont(nueva);
         display.setEditable(false);
         display.setHorizontalAlignment(JTextField.RIGHT);
         add(display,BorderLayout.NORTH);
-            
         
+        ListenerVerdes orejon = new ListenerVerdes(display);
+        btn1.addActionListener(orejon);
+        btn2.addActionListener(orejon);
+        btnMM.addActionListener(orejon);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     

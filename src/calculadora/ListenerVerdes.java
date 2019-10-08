@@ -7,6 +7,7 @@ package calculadora;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JTextField;
 
 /**
  *
@@ -14,9 +15,29 @@ import java.awt.event.ActionListener;
  */
 public class ListenerVerdes implements ActionListener{
 
+    private Display display;
+
+    public ListenerVerdes(Display display) {
+        this.display = display;
+    }
+        
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       JButtonC aux = (JButtonC) e.getSource();
+       
+       if (aux.getText().equals("+/-")){
+          if(display.getNumero().isNegativo()){
+              display.getNumero().setNegativo(false);
+          }else{
+              display.getNumero().setNegativo(true);
+              
+          }
+         display.setText(display.getNumero().getValue()+"");
+         System.out.println(display.getNumero().getValue());
+       }else{
+         display.concatenar(aux.getText());
+       }
+
     }
     
 }
