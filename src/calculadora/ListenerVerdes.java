@@ -32,10 +32,12 @@ public class ListenerVerdes implements ActionListener{
               display.getNumero().setNegativo(true);
               
           }
+        // display.getNumero().concatenar(display.getNumero().getValue()+"");
          display.setText(display.getNumero().getValue()+"");
-         System.out.println(display.getNumero().getValue());
+         
        }else{
          display.concatenar(aux.getText());
+         display.setText(display.getNumero().getValue()+"");
        }
 
     }

@@ -33,8 +33,10 @@ public class NumeroDisplay {
     public double getValue(){
         double valor=new Double(this.getTexto());
         if (isNegativo()){
+          
            return valor*-1;
         }
+      
         return valor;
     }
 

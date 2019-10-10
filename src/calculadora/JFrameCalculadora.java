@@ -92,7 +92,22 @@ public class JFrameCalculadora extends JFrame {
         ListenerVerdes orejon = new ListenerVerdes(display);
         btn1.addActionListener(orejon);
         btn2.addActionListener(orejon);
+        btn3.addActionListener(orejon);
+        btn4.addActionListener(orejon);
+        btn5.addActionListener(orejon);
+        btn6.addActionListener(orejon);
+        btn7.addActionListener(orejon);
+        btn8.addActionListener(orejon);
+        btn9.addActionListener(orejon);
+        btnCero.addActionListener(orejon);
         btnMM.addActionListener(orejon);
+        ListenersGrises orejon2 = new ListenersGrises(display);
+        btnPlus.addActionListener(orejon2);
+        btnMenos.addActionListener(orejon2);
+        btnDiv.addActionListener(orejon2);
+        btnMulti.addActionListener(orejon2);
+        btnIgual.addActionListener(orejon2);
+        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
