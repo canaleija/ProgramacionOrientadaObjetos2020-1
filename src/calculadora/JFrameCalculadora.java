@@ -108,6 +108,8 @@ public class JFrameCalculadora extends JFrame {
         btnMulti.addActionListener(orejon2);
         btnIgual.addActionListener(orejon2);
         
+        
+        
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     

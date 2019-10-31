@@ -102,6 +102,12 @@ public class Alumno extends Persona {
        super.saludar();
        System.out.println("Y soy Alumno!");
     }
+
+    @Override
+    public String toString() {
+        
+        return this.getNombre(); //To change body of generated methods, choose Tools | Templates.
+    }
     
    
     
